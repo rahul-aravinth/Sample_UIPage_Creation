@@ -1,0 +1,128 @@
+html, body{
+    margin: 0%;
+    background-color: white;
+    font-family: "Lucida Console";
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #cf3238;
+}
+
+.bgimage1{
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top left bottom;
+    background-image: url("./Images/bgimage1.jpg");
+}
+
+.flex-container-pages{
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(white, transparent);
+    float: right;
+}
+
+.flex-container > div {
+    color: white;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.flex-container-pages > div{
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.main-logo{
+    margin-left: 30px;
+    padding-top:30px;
+}
+
+.big-words-no-meaning-1{
+    color: white;
+    margin-top:100px;
+    margin-left:40px;
+}
+
+.big-words-no-meaning-2{
+    color: white;
+    margin-top:30px;
+    margin-left:40px;
+}
+
+.main-round-rect-in-middle{
+    border-radius: 15px;
+    background: #cf3238;
+    padding: 20px; 
+    width: 80%;
+    height: 100px;
+    margin:auto;  
+    padding: 10px;
+    margin-top:-50px;
+    color:white;
+}
+.round-rect-box{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.round-rect-box > .box-inside-box{
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #cf3238;
+    margin-top:10px;
+    height: 30px;
+    padding:10px;
+    margin-right: 10px;
+    width:33%;
+    color:wheat;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: black;
+    background-image: linear-gradient(white, black);
+}
+footer > div {
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    color:white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .flex-container > div, .flex-container-pages > div {
+        font-size: 1.0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .flex-container > div, .flex-container-pages > div {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container > div, .flex-container-pages > div {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .flex-container > div, .flex-container-pages > div {
+        line-height: 30px;
+        font-size: 0.4rem;
+    }
+}
